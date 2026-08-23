@@ -1,4 +1,4 @@
-import type { UsuarioSecurityResponse } from "../types";
+import type { UsuarioSecurityResponse } from "../../types";
 
 const STORAGE_OF_AUTHORIZATION = 'STORAGE_OF_AUTHORIZATION_APP';
 
