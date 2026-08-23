@@ -1,4 +1,4 @@
-import { type FC, type ReactNode, useContext } from 'react';
+import { type FC, type JSX, type ReactNode, useContext } from 'react';
 import AccordionContext, { isAccordionItemSelected } from 'react-bootstrap/AccordionContext';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import { useAccordionCoreItem } from '../context/AccordionCoreItemContext';

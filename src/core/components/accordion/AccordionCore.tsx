@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import { type JSX, type ReactNode } from 'react';
 import Accordion, { type AccordionProps } from 'react-bootstrap/Accordion';
 import AccordionCoreItem from './components/AccordionCoreItem';
 import AccordionCoreHeader from './components/AccordionCoreHeader';

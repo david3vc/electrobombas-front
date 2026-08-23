@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import { type JSX, type ReactNode } from 'react';
 import AccordionCollapse from 'react-bootstrap/AccordionCollapse';
 import { useAccordionCoreItem } from '../context/AccordionCoreItemContext';
 

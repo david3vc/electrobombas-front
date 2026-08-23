@@ -1,4 +1,4 @@
-import { createContext, type ReactNode, useContext, useMemo } from 'react';
+import { createContext, type JSX, type ReactNode, useContext, useMemo } from 'react';
 
 interface ContextProps {
 	eventKey: string;
