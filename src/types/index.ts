@@ -14,6 +14,7 @@ import type PozoRequest from './models/Pozos/PozoRequest';
 import type PozoResponse from './models/Pozos/PozoResponse';
 import type TablaComunFilter from './models/TablaComunes/TablaComunFilter';
 import type TablaComunResponse from './models/TablaComunes/TablaComunResponse';
+import type HasId from './models/Generals/HasId';
 
 export type {
     UsuarioSecurityResponse,
@@ -32,4 +33,5 @@ export type {
     PozoResponse,
     TablaComunFilter,
     TablaComunResponse,
+    HasId,
 };
