@@ -1,4 +1,4 @@
-export default interface PozoFiler {
+export default interface PozoFilter {
     nombre: string | null;
     diametro: number | null;
     ne: number | null;

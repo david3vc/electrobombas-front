@@ -9,7 +9,7 @@ import type MantenimientoTrabajadorResponse from './models/MantenimientoTrabajad
 import type FilterPage from './models/Paginations/FilterPage';
 import type PaginationRequest from './models/Paginations/PaginationRequest';
 import type PaginationResponse from './models/Paginations/PaginationResponse';
-import type PozoFiler from './models/Pozos/PozoFiler';
+import type PozoFilter from './models/Pozos/PozoFilter';
 import type PozoRequest from './models/Pozos/PozoRequest';
 import type PozoResponse from './models/Pozos/PozoResponse';
 import type TablaComunFilter from './models/TablaComunes/TablaComunFilter';
@@ -27,7 +27,7 @@ export type {
     FilterPage,
     PaginationRequest,
     PaginationResponse,
-    PozoFiler,
+    PozoFilter,
     PozoRequest,
     PozoResponse,
     TablaComunFilter,
