@@ -1,3 +1,4 @@
+import type MantenimientoTrabajadorResponse from "../MantenimientoTrabajadores/MantenimientoTrabajadorResponse";
 import type RecordState from "../Paginations/RecordState";
 
 export default interface MantenimientoResponse {
@@ -7,5 +8,6 @@ export default interface MantenimientoResponse {
     idTipoMantenimiento: number | null;
     observaciones: string | null;
     estado: boolean;
+    trabajadores: MantenimientoTrabajadorResponse[]
     recordState: RecordState;
 }

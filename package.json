@@ -24,7 +24,9 @@
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.2",
-    "react-select": "^5.10.2"
+    "react-select": "^5.10.2",
+    "toastmejs": "^1.2.7",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

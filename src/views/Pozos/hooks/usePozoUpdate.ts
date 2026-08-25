@@ -2,6 +2,7 @@ import { type UseMutationResult, useQueryClient, useMutation } from '@tanstack/r
 import type { PozoRequest, PozoResponse } from '../../../types';
 import { POZO_PAGINATED_SEARCH } from './QueryKeys';
 import { PozoService } from '../../../services';
+import { toastError, toastSuccess } from '../../../core/helpers/ToastHelper';
 
 interface PozoUpdateProps {
 	id: number;
@@ -19,7 +20,11 @@ const usePozoUpdate = (): UseMutationResult<
 			await PozoService.update(payload.id, payload.pozo),
 		onSuccess: () => {
 			void queryClient.invalidateQueries({ queryKey: [POZO_PAGINATED_SEARCH] });
+			toastSuccess('Pozo guardado correctamente.');
 		},
+		onError: () => {
+			toastError('Hubo un error');
+		}
 	});
 
 	return response;

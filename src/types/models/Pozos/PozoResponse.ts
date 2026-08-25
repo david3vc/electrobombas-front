@@ -1,4 +1,6 @@
+import type MantenimientoResponse from "../Mantenimientos/MantenimientoResponse";
 import type RecordState from "../Paginations/RecordState";
+import type TablaComunResponse from "../TablaComunes/TablaComunResponse";
 
 export default interface PozoResponse {
     id: number;
@@ -18,5 +20,7 @@ export default interface PozoResponse {
     numeroImpulsores: number | null;
     idUbicacion: number | null;
     estado: boolean;
+    ubicacion: TablaComunResponse;
+    mantenimientos: MantenimientoResponse[];
     recordState: RecordState;
 }

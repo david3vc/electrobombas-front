@@ -1616,3 +1616,22 @@ html[data-theme="dark"] {
   border-top-color: var(--admin-sidebar-border);
   color: var(--admin-sidebar-text);
 }
+
+.accordion-flat {
+	.accordion-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.accordion-button {
+		padding: 15px;
+		background-color: inherit;
+		width: auto;
+
+		&:not(.collapsed),
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}

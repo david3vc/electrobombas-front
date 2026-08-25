@@ -7,7 +7,7 @@ const usePozoFindById = (id?: number): UseQueryResult<PozoResponse, Error> => {
 	const response = useQuery({
 		queryKey: [POZO_FIND_BY_ID, id],
 		queryFn: async () => await PozoService.findById(Number(id)),
-		enabled: !(id == null),
+		enabled: !(id == 0),
 		retry: 0,
 		refetchOnWindowFocus: false,
 	});

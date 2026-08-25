@@ -15,6 +15,7 @@ import { useFormik } from 'formik';
 import { createColumnHelper } from '@tanstack/react-table';
 import BadgeCore from '../../core/components/general/BadgeCore';
 import { usePozoPaginatedSearch } from './hooks';
+import NavLinkCore from '../../core/components/general/NavLinkCore';
 
 interface DepartamentoFilterFormik extends PozoFilter {
     recordState: RecordState | null;
@@ -94,13 +95,13 @@ const PozoMain = () => {
                     // }}
                     />
                     {' '}
-                    <ButtonCore
+                    <NavLinkCore
                         variant="outline-primary"
+                        to={`editar/${row.original.id}`}
                         title="Editar"
-                        size="sm"
                         icon="fa-solid fa-pen-to-square"
                         className="border-0"
-                    // onClick={() => modalRef.current?.openModal(row.original.id)}
+                        size="sm"
                     />
                     <ButtonCore
                         variant="outline-info"
@@ -159,7 +160,7 @@ const PozoMain = () => {
                     <BreadcrumbCore.Item>Pozos</BreadcrumbCore.Item>
                 </BreadcrumbCore.Items>
                 <BreadcrumbCore.Actions>
-                    <ButtonCore
+                    {/* <ButtonCore
                         variant="primary"
                         text="Nuevo pozo"
                         title="Nuevo pozo"
@@ -168,6 +169,13 @@ const PozoMain = () => {
                         className="ms-2"
                         hiddenText="sm"
                     // onClick={() => modalRef.current?.openModal()}
+                    /> */}
+                    <NavLinkCore
+                        to="/pozos/registrar"
+                        variant="primary"
+                        text="Nuevo pozo"
+                        size="sm"
+                        icon="fa-solid fa-circle-plus"
                     />
                 </BreadcrumbCore.Actions>
             </BreadcrumbCore>
@@ -296,7 +304,7 @@ const PozoMain = () => {
                                     <Col xs={12} sm={6} md={4} xxl={3}>
                                         <Form.Label>Ubicación</Form.Label>
                                         <Select
-                                            className="react__select"
+                                            className="react__select "
                                             classNamePrefix="rs_react"
                                             name="division"
                                             // value={formik.values.division?? ''}
